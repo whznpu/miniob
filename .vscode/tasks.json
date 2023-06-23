@@ -1,0 +1,21 @@
+{
+    "options": {
+        "cwd": "/root/miniob-505/bash-scripts"
+    },
+    "tasks": [
+        {
+            "label": "run shell",
+            "command": "sh",
+            "args": [
+                "build.sh"
+            ]
+        },
+        {
+            "label": "CMake Build",
+            "dependsOn": [
+                "run shell"
+            ]
+        }
+    ],
+    "version": "2.0.0"
+}
